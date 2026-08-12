@@ -1,0 +1,94 @@
+# =========================================
+#          JterStaffers - messages.yml
+# =========================================
+# Color codes: use & (e.g. &c = red)
+# Placeholders are indicated per message with {placeholder}
+
+prefix: "&8[&cJterStaffers&8] &7"
+
+general:
+  no-permission: "{prefix}&cYou don't have permission to do that."
+  player-only: "{prefix}&cOnly players can use this command."
+  player-not-found: "{prefix}&cPlayer '&f{player}&c' not found."
+  player-not-online: "{prefix}&cPlayer '&f{player}&c' is not online."
+  invalid-usage: "{prefix}&cUsage: &f{usage}"
+  invalid-number: "{prefix}&c'&f{input}&c' is not a valid number."
+  no-console: "{prefix}&cThis action cannot target the console."
+
+staffchat:
+  format: "&7[&c&lSC&7] &c{player}&7: &f{message}"
+  toggle-on: "{prefix}&aStaff chat toggled &lON&a. Your messages will now be sent to staff chat."
+  toggle-off: "{prefix}&cStaff chat toggled &lOFF&c."
+  empty-message: "{prefix}&cYou can't send an empty message."
+
+staffmode:
+  enabled: "{prefix}&aYou are now in &lSTAFF MODE&a."
+  disabled: "{prefix}&cYou left &lSTAFF MODE&c."
+  cannot-drop: "{prefix}&cYou can't drop staff mode items."
+  cannot-move: "{prefix}&cYou can't move staff mode items."
+  cannot-place: "{prefix}&cYou can't place staff mode items."
+  must-be-in-staffmode: "{prefix}&cYou must be in staff mode to use this."
+
+vanish:
+  enabled: "{prefix}&aVanish &lENABLED&a. You are now invisible to other players."
+  disabled: "{prefix}&cVanish &lDISABLED&c. You are now visible again."
+  now-visible-console: "[JterStaffers] {player} is no longer vanished."
+  now-vanished-console: "[JterStaffers] {player} is now vanished."
+
+freeze:
+  froze: "{prefix}&a{player} &7has been &c&lFROZEN&7."
+  unfroze: "{prefix}&a{player} &7has been &a&lUNFROZEN&7."
+  you-were-frozen: "{prefix}&cYou have been frozen by a staff member. You can still chat."
+  you-were-unfrozen: "{prefix}&aYou have been unfrozen."
+  cannot-move: "&c&lYou are frozen! &7You cannot move."
+  cannot-use-command: "&c&lYou are frozen! &7You cannot use commands."
+  cannot-target-staff: "{prefix}&cYou can't freeze another staff member."
+
+teleport:
+  teleported-to: "{prefix}&aTeleported to &f{player}&a."
+  no-players-available: "{prefix}&cThere are no other online players to teleport to."
+
+inspect:
+  header: "&8&m----------&r {prefix}&fInfo: &c{player} &8&m----------"
+  line-uuid: "&7UUID: &f{uuid}"
+  line-gamemode: "&7Gamemode: &f{gamemode}"
+  line-health: "&7Health: &f{health}&7/&f{maxhealth}"
+  line-food: "&7Food: &f{food}&7/20"
+  line-level: "&7XP Level: &f{level}"
+  line-world: "&7World: &f{world}"
+  line-location: "&7Location: &f{x}, {y}, {z}"
+  line-ip: "&7IP: &f{ip}"
+  line-ping: "&7Ping: &f{ping}ms"
+  line-first-join: "&7First join: &f{date}"
+  line-vanished: "&7Vanished: &f{vanished}"
+  line-frozen: "&7Frozen: &f{frozen}"
+  footer: "&8&m--------------------------------------------"
+
+invsee:
+  opened: "{prefix}&aOpened &f{player}&a's inventory."
+  opened-own: "{prefix}&cYou can't invsee yourself."
+
+spectator:
+  enabled: "{prefix}&aYou are now in &7&lSPECTATOR&a mode."
+  disabled: "{prefix}&cYou left spectator mode."
+
+playerlist:
+  gui-title: "&8Player List &7- &fPage {page}"
+  actions-gui-title: "&8Actions &7- &f{player}"
+  no-players: "{prefix}&7There are no online players to show."
+
+admin:
+  reloaded: "{prefix}&aConfiguration and messages reloaded."
+
+notes:
+  added: "{prefix}&aAdded note &f#{id}&a to &f{player}&a."
+  removed: "{prefix}&aRemoved note &f#{id}&a from &f{player}&a."
+  remove-not-found: "{prefix}&cNote &f#{id}&c not found for &f{player}&c."
+  no-notes: "{prefix}&7{player} has no notes."
+  no-notes-any: "{prefix}&7No player has notes yet."
+  list-header: "&8&m----------&r {prefix}&fNotes for &c{player} &8&m----------"
+  list-entry: "&7#{id} &8| &f{text} &8(&7by {author}, {date}&8)"
+  list-footer: "&8&m--------------------------------------------"
+  players-header: "&8&m----------&r {prefix}&fPlayers with notes &8&m----------"
+  players-entry: "&7- &f{player} &8(&7{count} note(s)&8)"
+  empty-text: "{prefix}&cYou must provide a note text."

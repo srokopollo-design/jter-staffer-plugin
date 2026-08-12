@@ -1,0 +1,109 @@
+# =========================================
+#           JterStaffers - config.yml
+# =========================================
+
+# Commands - you can disable a command entirely by setting enabled: false
+commands:
+  staffchat:
+    enabled: true
+    aliases: ["staffc"]
+  staffmode:
+    enabled: true
+    aliases: ["smode"]
+  vanish:
+    enabled: true
+    aliases: ["v"]
+  invsee:
+    enabled: true
+    aliases: ["inv"]
+  freeze:
+    enabled: true
+    aliases: ["fr"]
+  note:
+    enabled: true
+    aliases: ["notes"]
+
+staffmode:
+  # If true, the player's inventory/armor/offhand/xp/gamemode are saved and
+  # restored automatically when toggling staff mode.
+  save-inventory: true
+  # Gamemode to switch to when entering staff mode. Leave empty ("") to keep current gamemode.
+  gamemode-on-enter: "SURVIVAL"
+  # Gamemode to restore when leaving staff mode (only used if save-inventory restore fails)
+  gamemode-on-leave: "SURVIVAL"
+  # Grants flight while in staff mode or vanished. Original flight state is restored afterwards.
+  fly: true
+  # Grants infinite Night Vision while in staff mode or vanished.
+  night-vision: true
+
+  # Items given to the player while in staff mode.
+  # slot: hotbar/inventory slot (0-35)
+  # material: any valid Bukkit Material
+  # name & lore support & color codes
+  items:
+    freeze:
+      enabled: true
+      slot: 0
+      material: BLAZE_ROD
+      name: "&c&lFreeze Stick"
+      lore:
+        - "&7Right-click a player to"
+        - "&7freeze or unfreeze them."
+    vanish:
+      enabled: true
+      slot: 1
+      material: ENDER_EYE
+      name: "&b&lVanish"
+      lore:
+        - "&7Click to toggle vanish."
+    teleport:
+      enabled: true
+      slot: 2
+      material: COMPASS
+      name: "&d&lRandom Teleport"
+      lore:
+        - "&7Click to teleport to a"
+        - "&7random online player."
+    inspect:
+      enabled: true
+      slot: 3
+      material: PAPER
+      name: "&e&lInspect Tool"
+      lore:
+        - "&7Right-click a player to"
+        - "&7view their information."
+    invsee:
+      enabled: true
+      slot: 4
+      material: CHEST
+      name: "&6&lInvsee"
+      lore:
+        - "&7Right-click a player to"
+        - "&7open/edit their inventory."
+    playerlist:
+      enabled: true
+      slot: 5
+      material: PLAYER_HEAD
+      name: "&a&lPlayer List"
+      lore:
+        - "&7Click to open the"
+        - "&7online player list."
+    spectator:
+      enabled: true
+      slot: 8
+      material: ELYTRA
+      name: "&7&lSpectator"
+      lore:
+        - "&7Click to toggle spectator mode."
+
+vanish:
+  # Message broadcast (console only) when a staffer vanishes/unvanishes - purely informational
+  notify-console: true
+
+freeze:
+  # Whether frozen players can still type in chat (per your request this should stay true)
+  allow-chat: true
+
+notes:
+  # Nothing to configure yet, reserved for future options
+  enabled: true
